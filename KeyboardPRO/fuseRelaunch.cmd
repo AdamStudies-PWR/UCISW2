@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/apocalypsearisen/Desktop/UCISW/KeyboardPRO/MagicKeyboard_isim_beh.exe" -prj "/home/apocalypsearisen/Desktop/UCISW/KeyboardPRO/MagicKeyboard_beh.prj" "work.MagicKeyboard" "work.glbl" 
