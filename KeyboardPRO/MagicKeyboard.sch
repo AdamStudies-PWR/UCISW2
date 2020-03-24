@@ -9,7 +9,6 @@
         <signal name="clk" />
         <signal name="reset" />
         <signal name="wave(7:0)" />
-        <signal name="XLXN_4" />
         <port polarity="Input" name="clk" />
         <port polarity="Input" name="reset" />
         <port polarity="Output" name="wave(7:0)" />

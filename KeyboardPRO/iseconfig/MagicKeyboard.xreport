@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-03-23T17:30:16</DateModified>
+  <DateModified>2020-03-24T18:01:00</DateModified>
   <ModuleName>MagicKeyboard</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/apocalypsearisen/Desktop/UCISW/UCISW2/KeyboardPRO/iseconfig/MagicKeyboard.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/apocalypsearisen/Desktop/UCISW/UCISW2/KeyboardPRO</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/apocalypsearisen/Desktop/UCISW/UCISW2/KeyboardPRO/</ImplementationReportsDirectory>
   <DateInitialized>2020-03-23T17:30:06</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
