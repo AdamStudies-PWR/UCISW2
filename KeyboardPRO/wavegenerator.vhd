@@ -39,7 +39,7 @@ begin
         if (reset = '1') then
             counter <= 0;
         elsif (rising_edge(clk)) then
-            if(counter = 255) then
+            if(counter = 31) then
                 counter <= 0;
             else 
                 counter <= counter + 1;

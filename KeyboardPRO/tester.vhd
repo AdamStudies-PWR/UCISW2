@@ -31,6 +31,8 @@ ARCHITECTURE behavioral OF MagicKeyboard_MagicKeyboard_sch_tb IS
    SIGNAL reset	:	STD_LOGIC ;
    SIGNAL wave	:	STD_LOGIC_VECTOR (7 DOWNTO 0);
 
+	constant Clk_period : time := 31250 ns;
+
 BEGIN
 
    UUT: MagicKeyboard PORT MAP(
@@ -38,8 +40,26 @@ BEGIN
 		reset => reset, 
 		wave => wave
    );
+	
+	Clk_process :process
+   begin
+		clk <= '0';
+		wait for Clk_period/2;
+		clk <= '1';
+		wait for Clk_period/2;
+   end process;
 
-reset <= '0';
-clk <= '0', '1' after 5 ns, '0' after 10 ns, '1' after 15 ns, '0' after 20 ns, '1' after 25 ns, '0' after 30 ns, '1' after 35 ns, '0' after 40 ns, '1' after 45 ns, '0' after 50 ns, '1' after 55 ns, '0' after 60 ns, '1' after 65 ns, '0' after 70 ns, '1' after 75 ns, '0' after 80 ns, '1' after 85 ns, '0' after 90 ns, '1' after 95 ns, '0' after 100 ns, '1' after 105 ns, '0' after 110 ns, '1' after 115 ns, '0' after 120 ns, '1' after 125 ns, '0' after 130 ns, '1' after 135 ns, '0' after 140 ns, '1' after 145 ns, '0' after 150 ns, '1' after 155 ns, '0' after 160 ns, '1' after 165 ns, '0' after 170 ns, '1' after 175 ns, '0' after 180 ns, '1' after 185 ns, '0' after 190 ns, '1' after 195 ns, '0' after 200 ns, '1' after 205 ns, '0' after 210 ns, '1' after 215 ns, '0' after 220 ns, '1' after 225 ns, '0' after 230 ns, '1' after 235 ns, '0' after 240 ns, '1' after 245 ns, '0' after 250 ns, '1' after 255 ns, '0' after 260 ns, '1' after 265 ns, '0' after 270 ns, '1' after 275 ns, '0' after 280 ns, '1' after 285 ns, '0' after 290 ns, '1' after 295 ns, '0' after 300 ns, '1' after 305 ns, '0' after 310 ns, '1' after 315 ns, '0' after 320 ns, '1' after 325 ns, '0' after 330 ns, '1' after 335 ns, '0' after 340 ns, '1' after 345 ns, '0' after 350 ns, '1' after 355 ns, '0' after 360 ns;
+	-- Stimulus process
+   stim_proc: process
+   begin		
+      -- hold reset state for 100 ns.
+      wait for 100 ns;	
+
+      wait for Clk_period*10;
+
+      -- insert stimulus here 
+
+      wait;
+   end process;
 
 END;
