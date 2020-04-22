@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Shared/UCISW2/fpga-synth/test_isim_beh.exe" -prj "/home/ise/Shared/UCISW2/fpga-synth/test_beh.prj" "work.test" 
