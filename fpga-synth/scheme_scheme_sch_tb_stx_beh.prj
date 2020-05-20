@@ -1,0 +1,4 @@
+vhdl isim_temp "wave_generator.vhd"
+vhdl isim_temp "key_man.vhd"
+vhdl isim_temp "sim_test.vhd"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

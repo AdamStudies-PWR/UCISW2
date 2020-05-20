@@ -1,0 +1,4 @@
+verilog work "fpga_synth.vf"
+verilog work "scheme.vf"
+verilog work "KeyboardPRO.vf"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

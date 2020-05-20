@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Shared/UCISW2/fpga-synth/test_isim_beh.exe" -prj "/home/ise/Shared/UCISW2/fpga-synth/test_beh.prj" "work.test" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ise/Shared/Repos/UCISW2/fpga-synth/scheme_scheme_sch_tb_isim_beh.exe" -prj "/home/ise/Shared/Repos/UCISW2/fpga-synth/scheme_scheme_sch_tb_beh.prj" "work.scheme_scheme_sch_tb" "work.glbl" 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/adam/UCISW/UCISW2/fpga-synth/generator.ncd
+OUTFILE=/home/adam/UCISW/UCISW2/fpga-synth/generator.bit
+FAMILY=Spartan6
+PART=xc6slx4-3csg225
+WORKINGDIR=/home/adam/UCISW/UCISW2/fpga-synth
+LICENSE=WebPack
+USER_INFO=211846224_0_0_155

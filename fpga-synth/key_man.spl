@@ -1,0 +1,9 @@
+[Inputs]
+F0
+DO_Rdy
+clk
+=DO[7:0]=
+[Outputs]
+pressed
+=CHOICE[3:0]=
+[BiDir]

@@ -1,23 +1,35 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/Shared/UCISW2/fpga-synth/test_isim_beh.exe -prj /home/ise/Shared/UCISW2/fpga-synth/test_beh.prj work.test 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/ise/Shared/Repos/UCISW2/fpga-synth/scheme_scheme_sch_tb_isim_beh.exe -prj /home/ise/Shared/Repos/UCISW2/fpga-synth/scheme_scheme_sch_tb_beh.prj work.scheme_scheme_sch_tb work.glbl 
 ISim P.20160913 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/ise/Shared/UCISW2/fpga-synth/wave_generator.vhd" into library work
-Parsing VHDL file "/home/ise/Shared/UCISW2/fpga-synth/test.vhd" into library work
+Analyzing Verilog file "/home/ise/Shared/Repos/UCISW2/fpga-synth/scheme.vf" into library work
+Analyzing Verilog file "/home/ise/Shared/Repos/UCISW2/fpga-synth/KeyboardPRO.vf" into library work
+Analyzing Verilog file "/home/ise/Shared/Repos/UCISW2/fpga-synth/fpga_synth.vf" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "/home/ise/Shared/Repos/UCISW2/fpga-synth/wave_generator.vhd" into library work
+Parsing VHDL file "/home/ise/Shared/Repos/UCISW2/fpga-synth/key_man.vhd" into library work
+Parsing VHDL file "/home/ise/Shared/Repos/UCISW2/fpga-synth/sim_test.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 96596 KB
-Fuse CPU Usage: 3340 ms
+Fuse Memory Usage: 114176 KB
+Fuse CPU Usage: 3500 ms
+Compiling module glbl
+Compiling module scheme
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package vl_types
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity generator [generator_default]
-Compiling architecture behavior of entity test
+Compiling architecture behavioral of entity key_man [key_man_default]
+Compiling architecture behavioral of entity scheme_scheme_sch_tb
 Time Resolution for simulation is 1ps.
-Compiled 7 VHDL Units
-Built simulation executable /home/ise/Shared/UCISW2/fpga-synth/test_isim_beh.exe
-Fuse Memory Usage: 111912 KB
-Fuse CPU Usage: 3720 ms
-GCC CPU Usage: 690 ms
+Compiled 12 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable /home/ise/Shared/Repos/UCISW2/fpga-synth/scheme_scheme_sch_tb_isim_beh.exe
+Fuse Memory Usage: 138316 KB
+Fuse CPU Usage: 4460 ms
+GCC CPU Usage: 1270 ms

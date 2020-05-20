@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : scheme.vf
+// /___/   /\     Timestamp : 05/19/2020 23:39:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/ise/Shared/UCISW2/fpga-synth/scheme.vf -w /home/ise/Shared/UCISW2/fpga-synth/scheme.sch
+//Design Name: scheme
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module scheme(CLK, 
+              PS2_D0, 
+              PS2_D0_RDY, 
+              PS2_F0, 
+              START, 
+              WAV);
+
+    input CLK;
+    input [7:0] PS2_D0;
+    input PS2_D0_RDY;
+    input PS2_F0;
+   output START;
+   output [11:0] WAV;
+   
+   wire XLXN_10;
+   wire [3:0] XLXN_11;
+   
+   generator  XLXI_5 (.clk(CLK), 
+                     .KEY_IN(XLXN_11[3:0]), 
+                     .pressed(XLXN_10), 
+                     .start(START), 
+                     .wave(WAV[11:0]));
+   key_man  XLXI_6 (.clk(CLK), 
+                   .DO(PS2_D0[7:0]), 
+                   .DO_Rdy(PS2_D0_RDY), 
+                   .F0(PS2_F0), 
+                   .CHOICE(XLXN_11[3:0]), 
+                   .pressed(XLXN_10));
+endmodule

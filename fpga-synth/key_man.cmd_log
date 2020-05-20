@@ -1,0 +1,10 @@
+vhdtdtfi -lib work key_man.vhd -prj fpga-synth -o key_man.spl -module key_man -template /run/media/adam/DLinux/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 key_man.spl /home/adam/UCISW/UCISW2/fpga-synth/key_man.sym 
+vhdtdtfi -lib work key_man.vhd -prj fpga-synth -o key_man.spl -module key_man -template /run/media/adam/DLinux/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 key_man.spl /home/adam/UCISW/UCISW2/fpga-synth/key_man.sym 
+vhdtdtfi -lib work key_man.vhd -prj fpga-synth -o key_man.spl -module key_man -template /run/media/adam/DLinux/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w key_man.spl /home/adam/UCISW/UCISW2/fpga-synth/key_man.sym 
+vhdtdtfi -lib work key_man.vhd -prj fpga-synth -o key_man.spl -module key_man -template /run/media/adam/DLinux/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w key_man.spl /home/adam/UCISW/UCISW2/fpga-synth/key_man.sym 
+vhdtdtfi -lib work key_man.vhd -prj fpga-synth -o key_man.spl -module key_man -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w key_man.spl /home/ise/Shared/UCISW2/fpga-synth/key_man.sym 

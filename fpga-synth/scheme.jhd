@@ -1,0 +1,5 @@
+MODULE scheme
+	SUBMODULE generator
+		INSTANCE XLXI_5
+	SUBMODULE key_man
+		INSTANCE XLXI_6

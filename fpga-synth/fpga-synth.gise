@@ -22,45 +22,65 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="fpga-synth.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="KeyboardPRO.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="KeyboardPRO_KeyboardPRO_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="KeyboardPRO_KeyboardPRO_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="KeyboardPRO_KeyboardPRO_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="fpga_synth.vf"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="generator.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="generator.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="generator_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="key_man.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="key_man.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="scheme.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="scheme.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="scheme_scheme_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="scheme_scheme_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="scheme_scheme_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="scheme_scheme_sch_tb_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1587577737" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1587577737">
-      <status xil_pn:value="SuccessfullyRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1587577737" xil_pn:in_ck="7906604834438882585" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1587577737">
+    <transform xil_pn:end_ts="1589404574" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1589404574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="test.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1589933203" xil_pn:in_ck="1762151782636993461" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1589933203">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="key_man.vhd"/>
+      <outfile xil_pn:name="sim_test.vhd"/>
       <outfile xil_pn:name="wave_generator.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1587577737" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5812269477055105344" xil_pn:start_ts="1587577737">
+    <transform xil_pn:end_ts="1589933203" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1808466840481689896" xil_pn:start_ts="1589933203">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1587577738" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5342197783121862910" xil_pn:start_ts="1587577738">
+    <transform xil_pn:end_ts="1589933207" xil_pn:in_ck="5481122303082497" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6614398674837219098" xil_pn:start_ts="1589933203">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="scheme.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1589933083" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5413524624959659726" xil_pn:start_ts="1589933083">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1587577738" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5413524624959659726" xil_pn:start_ts="1587577738">
+    <transform xil_pn:end_ts="1589934941" xil_pn:in_ck="-1591642340959843715" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1589934941">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1587577738" xil_pn:in_ck="7906604834438882585" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1587577738">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="test.vhd"/>
+      <outfile xil_pn:name="KeyboardPRO.vf"/>
+      <outfile xil_pn:name="fpga_synth.vf"/>
+      <outfile xil_pn:name="key_man.vhd"/>
+      <outfile xil_pn:name="scheme.vf"/>
+      <outfile xil_pn:name="sim_test.vhd"/>
       <outfile xil_pn:name="wave_generator.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1587577745" xil_pn:in_ck="7906604834438882585" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1446487127974158378" xil_pn:start_ts="1587577738">
+    <transform xil_pn:end_ts="1589934953" xil_pn:in_ck="-1591642340959843715" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3847647457791008409" xil_pn:start_ts="1589934941">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -68,18 +88,18 @@
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="test_beh.prj"/>
-      <outfile xil_pn:name="test_isim_beh.exe"/>
+      <outfile xil_pn:name="scheme_scheme_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="scheme_scheme_sch_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1587577746" xil_pn:in_ck="4140465173363612911" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-706728514309537191" xil_pn:start_ts="1587577745">
+    <transform xil_pn:end_ts="1589934954" xil_pn:in_ck="8704667013005159342" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1297630955538407420" xil_pn:start_ts="1589934953">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="test_isim_beh.wdb"/>
+      <outfile xil_pn:name="scheme_scheme_sch_tb_isim_beh.wdb"/>
     </transform>
   </transforms>
 

@@ -1,0 +1,8 @@
+[Inputs]
+pressed
+clk
+=KEY_IN[3:0]=
+[Outputs]
+start
+=wave[11:0]=
+[BiDir]

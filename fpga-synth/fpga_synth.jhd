@@ -1,0 +1,3 @@
+MODULE fpga_synth
+	SUBMODULE scheme
+		INSTANCE XLXI_1

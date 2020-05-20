@@ -1,0 +1,7 @@
+vhdl work "wave_generator.vhd"
+vhdl work "key_man.vhd"
+verilog work "scheme.vf"
+vhdl work "sim_test.vhd"
+verilog work "KeyboardPRO.vf"
+verilog work "fpga_synth.vf"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
