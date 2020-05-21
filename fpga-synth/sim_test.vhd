@@ -74,7 +74,10 @@ CLK_process :process
 	  PS2_D0_RDY <= '0';
 	  wait for 4 ms;
 	  PS2_F0 <= '1';
+	  PS2_D0_RDY <= '1';
 	  wait for CLK_period;
+	  PS2_D0_RDY <= '0';
+	  wait for 1 ms;
 	end loop;  
    END PROCESS;
 

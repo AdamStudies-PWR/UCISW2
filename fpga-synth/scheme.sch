@@ -8,7 +8,6 @@
     <netlist>
         <signal name="XLXN_10" />
         <signal name="XLXN_11(3:0)" />
-        <signal name="XLXN_13" />
         <signal name="CLK" />
         <signal name="PS2_D0_RDY" />
         <signal name="PS2_F0" />

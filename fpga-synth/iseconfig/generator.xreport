@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-05-20T00:35:18</DateModified>
+  <DateModified>2020-05-21T10:38:40</DateModified>
   <ModuleName>generator</ModuleName>
   <SummaryTimeStamp>2020-04-26T13:34:15</SummaryTimeStamp>
   <SavedFilePath>/home/ise/Shared/Repos/UCISW2/fpga-synth/iseconfig/generator.xreport</SavedFilePath>

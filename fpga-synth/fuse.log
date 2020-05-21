@@ -13,7 +13,7 @@ Parsing VHDL file "/home/ise/Shared/Repos/UCISW2/fpga-synth/sim_test.vhd" into l
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 114176 KB
-Fuse CPU Usage: 3500 ms
+Fuse CPU Usage: 4390 ms
 Compiling module glbl
 Compiling module scheme
 Compiling package standard
@@ -31,5 +31,5 @@ Compiled 12 VHDL Units
 Compiled 2 Verilog Units
 Built simulation executable /home/ise/Shared/Repos/UCISW2/fpga-synth/scheme_scheme_sch_tb_isim_beh.exe
 Fuse Memory Usage: 138316 KB
-Fuse CPU Usage: 4460 ms
-GCC CPU Usage: 1270 ms
+Fuse CPU Usage: 5510 ms
+GCC CPU Usage: 1670 ms
